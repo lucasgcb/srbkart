@@ -12,8 +12,9 @@ conf="$(pwd)/adedserv.cfg"
 
 # Characters
 ralsei="$(pwd)/mods/KC_Mercedes-Benz_Ralsei_V1.wad"
+neco="$(pwd)/mods/neco.wad"
 bonus="/usr/games/SRB2KART/bonuschars.kart"
-allchars="${ralsei} ${bonus}"
+allchars="${ralsei} ${bonus} ${neco}"
 
 # Mods
 combi="$(pwd)/mods/KL_combiring_v3b.lua"
