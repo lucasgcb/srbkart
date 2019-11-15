@@ -11,10 +11,11 @@ echo "#########################################################"
 conf="$(pwd)/adedserv.cfg"
 
 # Characters
-ralsei="$(pwd)/mods/KC_Mercedes-Benz_Ralsei_V1.wad"
-neco="$(pwd)/mods/neco.wad"
+ralsei="$(pwd)/mods/KC_Mercedes-Benz_Ralsei_V1.pk3"
+arc="$(pwd)/mods/arc.pk3"
+neco="$(pwd)/mods/necoarc.pk3"
 bonus="/usr/games/SRB2KART/bonuschars.kart"
-allchars="${ralsei} ${bonus} ${neco}"
+allchars="${ralsei} ${bonus} ${neco} ${arc}"
 
 # Mods
 combi="$(pwd)/mods/KL_combiring_v3b.lua"
