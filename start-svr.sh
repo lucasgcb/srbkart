@@ -16,7 +16,6 @@ arc="$(pwd)/mods/arc.pk3"
 neco="$(pwd)/mods/necoarc.pk3"
 bonus="/usr/games/SRB2KART/bonuschars.kart"
 allchars="${ralsei} ${bonus} ${neco} ${arc}"
-mappack = "${RA}"
 # Mods
 combi="$(pwd)/mods/KL_combiring_v3b.lua"
 
@@ -30,13 +29,13 @@ then
     print_svr_ok
 elif [ $1 = "maps" ]
 then
-    echo "Thick Maps"
-    tmux new-session -d -s kart_server "srb2kart -dedicated -room 28 -config ${conf} -file ${allchars} ${mappack}"
+    echo "Maps removed. Normal game"
+    tmux new-session -d -s kart_server "srb2kart -dedicated -room 28 -config ${conf} -file ${allchars}"
     print_svr_ok
 elif [ $1 = "combimaps" ]
 then
-    echo "Thick Combi Maps"
-    tmux new-session -d -s kart_server "srb2kart -dedicated -room 28 -config ${conf} -file ${allchars} ${combi} ${mappack}"
+    echo "Maps removed. Normal Combi Maps"
+    tmux new-session -d -s kart_server "srb2kart -dedicated -room 28 -config ${conf} -file ${allchars} ${combi}"
     print_svr_ok
 else
     echo "Unknown mode for server. Nothing done."
