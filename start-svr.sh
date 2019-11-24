@@ -11,12 +11,13 @@ echo "#########################################################"
 conf="$(pwd)/adedserv.cfg"
 
 # Characters
+akirame = "$(pwd)/mods/KC_Akiramev1.pk3"
 t54="$(pwd)/mods/KC_T-54_V1.pk3"
 ralsei="$(pwd)/mods/KC_Mercedes-Benz_Ralsei_V1.pk3"
 arc="$(pwd)/mods/arc.pk3"
 neco="$(pwd)/mods/necoarc.pk3"
 bonus="/usr/games/SRB2KART/bonuschars.kart"
-allchars="${ralsei} ${bonus} ${neco} ${arc} ${t54}"
+allchars="${ralsei} ${bonus} ${neco} ${arc} ${t54} ${akirame}"
 # Mods
 combi="$(pwd)/mods/KL_combiring_v3b.lua"
 
